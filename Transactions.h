@@ -153,13 +153,18 @@ public:
 				system("CLS"); //Clear the screen
 				delete repick;
 				addRec(); //Call the function
+				break;
 			case 2:
 				system("CLS"); //Clear the screen
 				delete repick;
 				listTrans l;  //Create a new instance of the listTrans class as "l"
 				l.list(); //Call the function list from the listTrans class
+				break;
 			case 3:
-				system("EXIT");  //Close the application			
+				system("EXIT");  //Close the application
+				break;
+			default:
+				cout << "Enter a number between 1 & 3.\n";
 			}
 		} while (*repick < 1 || *repick > 3); //Repeat the do function if repick is less than 1 or more than 3
 	}

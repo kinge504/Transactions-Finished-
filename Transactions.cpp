@@ -29,20 +29,27 @@ int main() {
 			system("CLS");
 			addTrans t;
 			t.addRec();
+			break;
 			}
 		case 2: {		
 			system("CLS");
 			listTrans l;
 			l.list();
+			break;
 			}
 		case 3: {
 			system("CLS");
 			delRec d;
 			d.del();
+			break;
 		}
 		case 4:{
 			system("EXIT");
+			break;
 			}
+		default:
+			cout << "Enter a number between 1 & 4\n";
+			break;
 		}
 	} while (num < 1 || num > 4);
 }
