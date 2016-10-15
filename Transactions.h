@@ -8,7 +8,7 @@
 #include <cppconn/resultset.h>
 #include <cppconn/statement.h>
 #include <cppconn/exception.h>
-#include <cppconn\prepared_statement.h>
+#include <cppconn/prepared_statement.h>
 using namespace std;
 
 class listTrans 
@@ -24,7 +24,7 @@ public:
 
 			//res = stmt->executeQuery("SELECT * FROM arrestrecords");
 			driver = get_driver_instance();
-			con = driver->connect("tcp://192.168.0.12:3306", "testusername", "testpassword");
+			con = driver->connect("tcp://xxx.xxx.x.xx:3306", "username", "password");
 			con->setSchema("transactions");
 
 			stmt = con->createStatement();
@@ -71,7 +71,7 @@ public:
 
 			// Connect to the mysql database
 			driver = get_driver_instance();		
-			con = driver->connect("tcp://192.168.0.12:3306", "testusername", "testpassword");
+			con = driver->connect("tcp://xxx.xxx.x.xx:3306", "username", "password");
 			con->setSchema("transactions");
 
 			// Prompt for user to enter data
@@ -183,7 +183,7 @@ public:
 
 		//res = stmt->executeQuery("SELECT * FROM arrestrecords");
 		driver = get_driver_instance();
-		con = driver->connect("tcp://192.168.0.12:3306", "testusername", "testpassword");
+		con = driver->connect("tcp://xxx.xxx.x.xx:3306", "username", "password");
 		con->setSchema("transactions");
 	// Calls the listTrans class and call the function list.
 	listTrans l;
