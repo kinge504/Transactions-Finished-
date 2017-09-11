@@ -202,7 +202,7 @@ public:
 
 	}
 	catch (sql::SQLException &e) {
-		cout << "Error while delete record";
+		cout << "Error while trying to delete this record";
 	}
 	system("pause");
 	}
